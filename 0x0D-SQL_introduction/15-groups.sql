@@ -6,10 +6,8 @@
     --The database name will be passed as an argument to the mysql command
 
 
-
-
-SELECT score, COUNT(1) AS number FROM second_table
-GROUP BY score
-ORDER BY number DESC;
-
+SELECT `score`, COUNT(*) AS `number`
+FROM `second_table`
+GROUP BY `score`
+ORDER BY `number` DESC;
 
